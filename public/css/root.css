@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import './responsive.css';
+
+@import "./header.css";
+@import "./footer.css";
+@import "./sidebar.css";
+
+
+:root {
+    --primary-color: #11254A;
+    --secondary-color: #8C1823;
+    --black: #1E1E1E;
+    --success: #5cb85c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: inherit;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    list-style: none;
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 97%;
+    margin: auto;
+}
+
+aside {
+    width: 17%;
+}
+
+.focus {
+    filter: brightness(0.6);
+}
+
+button {
+    cursor: pointer;
+}
+
+.whatsapp {
+    font-size: 40px;
+    border: 2px solid #24CC63;
+    outline: none;
+    padding: 5px;
+    position: fixed;
+    right: 20px;
+    bottom: 15px;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: #24CC63;
+}
+
+.content {
+    width: 97%;
+    margin: 10px auto;
+    display: flex;
+    gap: 10px;
+}
+
+.pageContent {
+    width: 83%;
+}
+
+.sub-content {
+    width: 100%;
+}
+
+.content-divide {
+    width: 75%;
+}
+
+.second-sidebar {
+    width: 25%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+dialog {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    display: none;
+    z-index: 80;
+}
+
+dialog .message {
+    width: 30%;
+    background: white;
+    padding: 1rem 2rem;
+    display: grid;
+}
+
+dialog .message form {
+    display: flex;
+    flex-direction: column;
+}
+
+dialog .message form label {
+    margin: 1rem 0 0.5rem;
+}
+
+dialog .message form input,
+dialog .message form textarea {
+    padding: 0.5rem 5px;
+    border: 1px solid;
+    outline: none;
+    border-radius: 0;
+}
+
+dialog .message form button {
+    margin: 1rem 0;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+}
+
+dialog .message>button {
+    padding: 0.5rem;
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: white;
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger {
+    border: 2px solid var(--black);
+    background-color: var(--black);
+    margin: auto;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    display: none;
+}
+
+.hamburger .icon {
+    width: 20px;
+}
+
+.block {
+    display: block;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    z-index: 50;
+}
+
+.swiper-slide {
+    text-align: center;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-pagination-bullet {
+    background-color: white;
+}
+
+.primary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 5px;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+    position: relative;
+    justify-self: first baseline;
+}
+
+.inquiryCompletionMsg,
+.success {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--secondary-color);
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.success {
+    background-color: var(--success);
+    color: white;
+    letter-spacing: 1px;
+}
+
+.popup {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px);
+    z-index: 1;
+}
+
+.popup .close {
+    all: unset;
+    top: -15px;
+    right: -15px;
+    background-color: var(--secondary-color);
+    padding: 8px;
+    color: white;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+
+.popup .message {
+    width: 60%;
+    padding: 30px;
+    background-color: white;
+    user-select: none;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.popup .message h1 {
+    color: var(--secondary-color);
+}
+
+.popup .message p {
+    margin-top: 10px;
+}

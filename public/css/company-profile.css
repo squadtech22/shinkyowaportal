@@ -1,0 +1,37 @@
+.w-100 {
+    width: 78%;
+}
+
+.sub-content h2 {
+    margin: 0rem 0 0.5rem;
+}
+
+.sub-content p {
+    margin-bottom: 0.5rem;
+}
+
+.sub-content table {
+    margin: 2rem 0;
+}
+
+.sub-content table tr {
+    text-align: left;
+    width: 62%;
+    margin-bottom: 0.5rem;
+    display: inline-flex;
+}
+
+.sub-content table th {
+    width: 35%;
+    padding: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.sub-content table td {
+    width: 65%;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-left: 0;
+}
+
+/* .sub-content table th */

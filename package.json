@@ -1,0 +1,31 @@
+{
+  "name": "shinkyowa",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "db:setup": "node --env-file=.env.local db/setup.mjs"
+  },
+  "dependencies": {
+    "lucide-react": "^0.577.0",
+    "mysql2": "^3.24.5",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "^0.0.1",
+    "swiper": "^11.2.10"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.4.0",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^5"
+  }
+}

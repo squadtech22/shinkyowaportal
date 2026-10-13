@@ -1,0 +1,237 @@
+.msg {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4rem 0;
+}
+
+.pageContent .sub-content .filter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 1px solid grey;
+}
+
+.pageContent .sub-content .filter h2 {
+    width: 100%;
+    padding: 0.2% 1%;
+    background: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: white;
+    font-weight: 400;
+}
+
+.pageContent .sub-content .filter form {
+    width: 98%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageContent .sub-content .filter form .row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.pageContent .sub-content .filter form .row .row-filter {
+    width: calc(100% * (1/5) - 20px);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.pageContent .sub-content .filter label {
+    width: 52%;
+}
+
+.pageContent .sub-content .filter select {
+    width: 100%;
+    height: 25px;
+    border: 1px solid grey;
+    outline: none;
+    padding: 0 5px;
+}
+
+.pageContent .sub-content .filter button {
+    margin: 1% 0;
+    padding: 5px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+}
+
+.pageContent .sub-content .sort-filter {
+    width: 100%;
+    padding: 1% 0;
+    background: rgba(236, 236, 236, 1);
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.pageContent .sub-content .sort-filter>div {
+    display: flex;
+    width: 50%;
+}
+
+.pageContent .sub-content .sort-filter p {
+    /* width: 0; */
+    margin-right: 10px;
+}
+
+.pageContent .sub-content .sort-filter span {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.pageContent .sub-content .sort-filter form {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.pageContent .sub-content .sort-filter form>div {
+    width: 23%;
+    display: flex;
+    align-items: center;
+}
+
+.pageContent .sub-content .sort-filter form label {
+    width: 35%;
+}
+
+.pageContent .sub-content .sort-filter form select {
+    width: 65%;
+    outline: none;
+    border: 1px solid grey;
+    padding: 5px 2px;
+}
+
+.pageContent .sub-content .listing {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pageContent .sub-content .item {
+    border-top: 0.5px solid grey;
+    border-bottom: 1px solid grey;
+    gap: 10px;
+    padding: 15px 0 15px 0;
+}
+
+.pageContent .sub-content .item img {
+    width: 20%;
+}
+
+.pageContent .sub-content .item .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.pageContent .sub-content .item .content .text {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    gap: 5px;
+}
+
+.pageContent .sub-content .item .content .features {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.pageContent .sub-content .item .content .features>div {
+    display: flex;
+    padding: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    font-size: 10px;
+}
+
+.pageContent .sub-content .item .content .text p {
+    width: 49%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.pageContent .sub-content .item .content .text span {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.pageContent .sub-content .item .action {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pageContent .sub-content .item .action p {
+    width: 90px;
+    padding: 5% 0;
+    border: 1px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+}
+
+.pageContent .sub-content .item .action button {
+    width: 90px;
+    padding: 5% 0;
+    border: 1px solid var(--primary-color);
+    color: white;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pageContent .sub-content .pagination {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.pageContent .sub-content .pagination .btn {
+    width: 30%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.pageContent .sub-content .pagination button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    font-size: 14px;
+    padding: 1% 5%;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+}
+
+.pageContent .sub-content .pagination button i {
+    font-size: 18px;
+}

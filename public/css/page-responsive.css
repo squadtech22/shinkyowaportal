@@ -1,0 +1,514 @@
+@media (max-width: 1024px) {
+    html {
+        overflow-x: clip;
+    }
+
+    body .content {
+        width: calc(100% - 24px);
+        margin: 16px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    body .content .main-sidebar,
+    body .content .pageContent,
+    body .content .sub-content,
+    body .content .second-sidebar {
+        width: 100%;
+        min-width: 0;
+    }
+
+    body .content .pageContent {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .content.information-page > .pageContent {
+        order: 1;
+    }
+
+    .content.information-page > .main-sidebar {
+        order: 2;
+    }
+
+    .content.information-page .second-sidebar {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 16px;
+        margin-top: 0;
+    }
+
+    .content.information-page .second-sidebar .vehicle-of-day {
+        display: block !important;
+        height: auto !important;
+        margin-bottom: 0;
+    }
+
+    .content.information-page .second-sidebar .vehicle-of-day .stage .item {
+        width: 100%;
+    }
+
+    .content.information-page .second-sidebar .vehicle-of-day .mySwiper {
+        height: 260px;
+    }
+
+    .content.information-page .second-sidebar .offers {
+        display: grid !important;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .content.information-page .second-sidebar .offers a {
+        display: block;
+        min-width: 0;
+    }
+
+    body .content .sub-content {
+        overflow-wrap: anywhere;
+    }
+
+    body .content .sub-content .w-100 {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body .content .sub-content img,
+    body .content .sub-content iframe {
+        max-width: 100%;
+    }
+
+    .main-sidebar .search {
+        display: block;
+        background: #fff;
+        border: 1px solid #e4e7ec;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(17, 37, 74, 0.08);
+        padding: 4px 14px 16px;
+    }
+
+    .main-sidebar .search h2.heading {
+        margin: 12px 0 4px !important;
+    }
+
+    .main-sidebar .search form {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+        margin: 10px 0 0;
+    }
+
+    .main-sidebar .search form .item {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        min-width: 0;
+    }
+
+    .main-sidebar .search form .item:nth-of-type(3),
+    .main-sidebar .search form button {
+        grid-column: 1 / -1;
+    }
+
+    .main-sidebar .search form label {
+        width: auto;
+        padding: 0;
+        font-size: 12px !important;
+        font-weight: 600;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #555;
+    }
+
+    .main-sidebar .search form input,
+    .main-sidebar .search form select {
+        width: 100%;
+        min-width: 0;
+        height: 44px;
+        padding: 0 12px;
+        border: 1px solid #d0d5dd;
+        border-radius: 8px;
+        background-color: #f9fafb;
+        color: var(--black);
+        /* 16px stops iOS Safari zooming in when a field is focused */
+        font-size: 16px !important;
+        transition: border-color 0.15s, box-shadow 0.15s;
+    }
+
+    .main-sidebar .search form select {
+        appearance: none;
+        -webkit-appearance: none;
+        padding-right: 34px;
+        text-overflow: ellipsis;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%2311254A' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 12px center;
+    }
+
+    .main-sidebar .search form input::placeholder {
+        color: #98a2b3;
+    }
+
+    .main-sidebar .search form input:focus,
+    .main-sidebar .search form select:focus {
+        border-color: var(--primary-color);
+        background-color: #fff;
+        box-shadow: 0 0 0 3px rgba(17, 37, 74, 0.15);
+    }
+
+    .main-sidebar .search form button {
+        width: 100%;
+        height: 46px;
+        margin: 4px 0 0;
+        border-radius: 8px;
+        font-size: 15px !important;
+        font-weight: 600;
+        letter-spacing: 0.03em;
+        box-shadow: 0 4px 12px rgba(140, 24, 35, 0.25);
+    }
+
+    .main-sidebar .search form button:active {
+        transform: translateY(1px);
+        box-shadow: 0 2px 6px rgba(140, 24, 35, 0.25);
+    }
+
+    .main-sidebar .make ul,
+    .main-sidebar .type ul,
+    .main-sidebar .region ul {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 6px 12px;
+    }
+
+    .pageContent .sub-content .filter form {
+        width: calc(100% - 24px);
+    }
+
+    .pageContent .sub-content .filter form .row {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    .pageContent .sub-content .filter form .row .row-filter {
+        width: 100%;
+        min-width: 0;
+        display: grid;
+        grid-template-columns: minmax(82px, 35%) minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .pageContent .sub-content .filter label,
+    .pageContent .sub-content .filter select {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .pageContent .sub-content .filter select {
+        width: 100% !important;
+        min-height: 42px;
+        max-height: none !important;
+    }
+
+    .pageContent .sub-content .sort-filter {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px;
+    }
+
+    .pageContent .sub-content .sort-filter > div,
+    .pageContent .sub-content .sort-filter form {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .pageContent .sub-content .sort-filter form > div {
+        width: min(100%, 320px);
+    }
+
+    .pageContent .sub-content .sort-filter form label {
+        width: auto;
+        margin-right: 8px;
+    }
+
+    .pageContent .sub-content .sort-filter form select {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .pageContent .sub-content .listing > a {
+        display: block;
+        width: 100%;
+    }
+
+    .pageContent .sub-content .listing > a > .item {
+        width: 100%;
+        display: grid;
+        grid-template-columns: minmax(150px, 28%) minmax(0, 1fr) 120px;
+        align-items: center;
+        gap: 12px;
+        padding: 14px;
+    }
+
+    .pageContent .sub-content .listing > a > .item > img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .content {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        gap: 8px;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .content .text p {
+        width: calc(50% - 4px);
+        min-width: 0;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .action {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .action p,
+    .pageContent .sub-content .listing > a > .item > .action button {
+        width: 100%;
+        min-height: 40px;
+    }
+
+    .pageContent .sub-content .pagination,
+    .pageContent .sub-content .pagination .btn {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .pageContent .sub-content .pagination button {
+        width: auto;
+        min-width: 40px;
+        min-height: 40px;
+    }
+
+    .sub-content > .stage {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .sub-content > .stage > .item,
+    .sub-content > .stage > .item:nth-child(1) {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .sub-content > .stage > .item:nth-child(2) > .stage {
+        width: 100%;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .sub-content > .stage > .item:nth-child(2) > .stage > .vehicle-details,
+    .sub-content > .stage > .item:nth-child(2) > .stage > .action {
+        width: calc(50% - 8px);
+        min-width: 0;
+    }
+
+    .sub-content > .stage > .item:nth-child(2) > .stage > .vehicle-details .table .col .row {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .sub-content > .stage > .item:nth-child(2) > .stage > .action form,
+    .sub-content > .stage > .item:nth-child(2) > .stage > .action .destination {
+        width: 100%;
+    }
+
+    .sub-content .mySwiper2 {
+        width: 100%;
+        height: clamp(240px, 42vw, 420px);
+    }
+
+    .sub-content .mySwiper2 .swiper-slide img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    .sub-content .mySwiper1 {
+        height: auto;
+        overflow: hidden !important;
+    }
+
+    .sub-content .mySwiper1 .swiper-wrapper {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+
+    .sub-content .mySwiper1 .swiper-slide {
+        flex: 0 0 20%;
+        width: 20% !important;
+        height: auto;
+    }
+
+    .related-vehicle {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 14px;
+    }
+
+    .related-vehicle .item {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .related-vehicle .item img {
+        width: 100%;
+        height: auto;
+    }
+
+    body .content .sub-content table {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        overflow-x: auto;
+    }
+
+    body .content .sub-content table tbody {
+        display: block;
+        width: 100%;
+    }
+
+    body .content .sub-content table tr {
+        display: grid;
+        grid-template-columns: minmax(130px, 35%) minmax(0, 1fr);
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    body .content .sub-content table th,
+    body .content .sub-content table td {
+        width: auto;
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .sub-content ul {
+        margin-left: 1.25rem;
+    }
+}
+
+@media (max-width: 640px) {
+    body .content {
+        width: calc(100% - 20px);
+        margin: 12px auto;
+        gap: 16px;
+    }
+
+    .pageContent .sub-content .filter form .row {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 10px;
+    }
+
+    .pageContent .sub-content .filter form .row .row-filter {
+        grid-template-columns: minmax(92px, 32%) minmax(0, 1fr);
+    }
+
+    .pageContent .sub-content .filter h2 {
+        padding: 8px 12px;
+    }
+
+    .pageContent .sub-content .sort-filter {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .pageContent .sub-content .sort-filter > div {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 8px;
+    }
+
+    .pageContent .sub-content .sort-filter > div p {
+        margin: 0;
+    }
+
+    .pageContent .sub-content .listing > a > .item {
+        grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+        align-items: start;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .action {
+        grid-column: 1 / -1;
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .action p,
+    .pageContent .sub-content .listing > a > .item > .action button {
+        flex: 1;
+        padding: 8px;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .content .text p {
+        width: 100%;
+    }
+
+    .pageContent .sub-content .listing > a > .item > .content .features {
+        gap: 6px;
+    }
+
+    .sub-content > .stage > .item:nth-child(2) > .stage {
+        flex-direction: column;
+    }
+
+    .sub-content > .stage > .item:nth-child(2) > .stage > .vehicle-details,
+    .sub-content > .stage > .item:nth-child(2) > .stage > .action {
+        width: 100%;
+    }
+
+    .sub-content .mySwiper2 {
+        height: clamp(210px, 68vw, 320px);
+    }
+
+    .sub-content .mySwiper1 .swiper-slide {
+        flex-basis: 23%;
+        width: 23% !important;
+    }
+
+    .related-vehicle {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 12px;
+    }
+
+    body .content .sub-content table tr {
+        grid-template-columns: minmax(0, 1fr);
+        margin: 12px 0;
+    }
+
+    body .content .sub-content table th,
+    body .content .sub-content table td {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .sub-content h1,
+    .sub-content h2,
+    .sub-content h3 {
+        overflow-wrap: anywhere;
+    }
+}
+
+@media (max-width: 380px) {
+    .main-sidebar .search form {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}

@@ -1,0 +1,158 @@
+header {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.12);
+    margin-bottom: 1rem;
+}
+
+header .upp-header {
+    padding: 5px 0;
+    color: var(--black);
+    font-weight: bold;
+}
+
+header .info {
+    flex: 1;
+}
+
+header .info .item {
+    margin-right: 8px;
+}
+
+header .time {
+    width: 30%;
+    margin-right: 10px;
+    text-align: right;
+}
+
+header .socials {
+    width: 9%;
+    text-align: right;
+}
+
+header .socials i {
+    font-size: 18px;
+    display: inline-flex;
+    height: 100%;
+    text-align: right;
+}
+
+header .main-header {
+    background: var(--primary-color);
+    padding: 0px 0;
+}
+
+header .main-header .logo {
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    height: 60px;
+}
+
+header .main-header .logo img {
+    width: 80%;
+}
+
+header .main-header .search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 1rem;
+}
+
+header .main-header .search form {
+    width: 50%;
+    height: 30px;
+}
+
+header .main-header .search input {
+    width: 90%;
+    height: 100%;
+    border: 1px solid white;
+    outline: none;
+    color: black;
+    padding-left: 8px;
+}
+
+header .main-header .search button {
+    width: 10%;
+    height: 100%;
+    background-color: var(--black);
+    color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+header .main-header .options {
+    width: 15%;
+    margin: auto;
+    color: white;
+    font-weight: bold;
+    justify-content: end;
+}
+
+header .main-header .options .item {
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .main-header .options .item p {
+    display: flex;
+    gap: 10px;
+}
+
+header .main-header .options .item i {
+    font-size: 18px;
+}
+
+header nav {
+    color: var(--black);
+    font-weight: bold;
+}
+
+header nav ul {
+    display: flex;
+    gap: 43px;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+header nav ul li ul {
+    all: unset;
+    flex-direction: column;
+    position: absolute;
+    background-color: white;
+    margin-top: 10px;
+    display: none;
+    z-index: 100;
+}
+
+header nav ul li:hover .submenu {
+    display: block;
+    display: flex;
+}
+
+header nav .submenu-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 0;
+    background: none;
+    border: none;
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+}
+
+header nav .submenu-toggle i {
+    transition: transform 0.25s ease;
+}

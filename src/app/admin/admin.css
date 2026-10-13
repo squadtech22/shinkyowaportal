@@ -1,0 +1,237 @@
+@import "tailwindcss";
+
+/* Admin panel theme. Brand navy/red come from the public site
+   (--primary-color #11254A, --secondary-color #8C1823). */
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+
+  --color-brand-50: #eef2f8;
+  --color-brand-100: #dbe3f0;
+  --color-brand-200: #b8c7e1;
+  --color-brand-300: #8aa2cb;
+  --color-brand-400: #5a78ad;
+  --color-brand-500: #3a5a92;
+  --color-brand-600: #284478;
+  --color-brand-700: #1b325d;
+  --color-brand-800: #11254a;
+  --color-brand-900: #0b1830;
+  --color-brand-950: #070f1f;
+
+  --color-accent-50: #fcf0f1;
+  --color-accent-100: #f8dadd;
+  --color-accent-500: #b4222f;
+  --color-accent-600: #8c1823;
+  --color-accent-700: #74131d;
+
+  /* Cards, menus and inputs: white, or dark navy in dark mode. */
+  --color-surface: #ffffff;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+/* Small helpers reused across admin forms and tables. */
+@utility input-base {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-slate-300);
+  background: var(--color-surface);
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: var(--color-slate-900);
+  box-shadow: 0 1px 2px rgb(15 23 42 / 0.04);
+  transition: border-color 0.15s, box-shadow 0.15s;
+  &:focus {
+    outline: none;
+    border-color: var(--color-brand-500);
+    box-shadow: 0 0 0 3px rgb(58 90 146 / 0.18);
+  }
+  &::placeholder {
+    color: var(--color-slate-400);
+  }
+  &:disabled {
+    background: var(--color-slate-50);
+    color: var(--color-slate-500);
+  }
+}
+
+/* Responsive tables: below 768px each row becomes a card. Cells show their
+   column name from data-label; the first cell (no label) is the card title. */
+@media (max-width: 767px) {
+  .rtable {
+    min-width: 0 !important;
+  }
+  .rtable thead {
+    display: none;
+  }
+  .rtable tbody tr {
+    display: flex;
+    flex-direction: column;
+    padding: 0.875rem 1rem;
+    border-bottom: 1px solid var(--color-slate-100);
+  }
+  .rtable tbody tr:last-child {
+    border-bottom: 0;
+  }
+  .rtable tbody td {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.3rem 0;
+    border: 0;
+    text-align: right;
+    white-space: normal;
+    max-width: none;
+  }
+  .rtable tbody td[data-label]::before {
+    content: attr(data-label);
+    flex-shrink: 0;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--color-slate-500);
+    text-align: left;
+  }
+  .rtable tbody td:not([data-label]) {
+    display: block;
+    text-align: left;
+  }
+  .rtable tbody td.rtable-actions {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 0.6rem;
+  }
+  .rtable tbody td:empty {
+    display: none;
+  }
+}
+
+/* Right-side drawer (components/admin/Drawer.tsx). */
+@keyframes drawer-in {
+  from { transform: translateX(100%); }
+}
+@keyframes drawer-fade {
+  from { opacity: 0; }
+}
+.drawer-panel { animation: drawer-in 240ms cubic-bezier(0.2, 0.8, 0.2, 1); }
+.drawer-backdrop { animation: drawer-fade 200ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .drawer-panel, .drawer-backdrop { animation: none; }
+}
+/* The drawer is half the screen wide, so forms built for a full page use at
+   most two columns inside it. Unlayered, so it wins over the utilities. */
+@media (min-width: 1024px) {
+  .drawer-body .lg\:grid-cols-3,
+  .drawer-body .lg\:grid-cols-4 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .drawer-body .lg\:col-span-3,
+  .drawer-body .lg\:col-span-4 {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ---------- Scrollbars ----------
+   Thin rounded thumbs instead of the chunky OS bars. WebKit/Blink get the
+   pseudo-elements (setting scrollbar-color there would disable them), and
+   Firefox gets the standard properties. .scrollbar-dark is for the navy
+   sidebar so it doesn't show a light bar on a dark background. */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-slate-300);
+  border: 3px solid transparent;
+  border-radius: 9999px;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-slate-400);
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+.scrollbar-dark::-webkit-scrollbar-thumb {
+  background-color: rgb(255 255 255 / 0.14);
+}
+.scrollbar-dark::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(255 255 255 / 0.28);
+}
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--color-slate-300) transparent;
+  }
+  .scrollbar-dark {
+    scrollbar-color: rgb(255 255 255 / 0.18) transparent;
+  }
+}
+
+/* ---------- Dark mode ----------
+   My profile > Preferences sets data-theme="dark" on <html>. Instead of dark:
+   variants everywhere, the neutral (slate) scale is flipped and cards use
+   --color-surface, so text-slate-900 becomes light text and bg-slate-100 a
+   dark background. Light tints (bg-emerald-50 ...) become translucent and the
+   dark text shades used on them get lighter. The navy sidebar, brand buttons
+   and white text stay as they are. Pages marked data-light-only (the printable
+   customer statement) stay light. */
+html[data-theme="dark"]:not(:has([data-light-only])) {
+  color-scheme: dark;
+  background: #0c1322;
+
+  --color-surface: #131c2e;
+  --color-slate-50: #182234;
+  --color-slate-100: #0c1322;
+  --color-slate-200: #263247;
+  --color-slate-300: #34425a;
+  --color-slate-400: #66758c;
+  --color-slate-500: #94a3b8;
+  --color-slate-600: #aab6c7;
+  --color-slate-700: #c7d1de;
+  --color-slate-800: #dde4ed;
+  --color-slate-900: #eef2f7;
+  --color-slate-950: #f8fafc;
+
+  /* Primary buttons (brand-800, hover brand-700) stand out from dark cards. */
+  --color-brand-800: #2b4c8c;
+  --color-brand-700: #3a5ea3;
+  --color-brand-50: rgb(122 156 214 / 0.14);
+  --color-accent-50: rgb(240 98 110 / 0.14);
+  --color-accent-100: rgb(240 98 110 / 0.28);
+  --color-emerald-50: rgb(16 185 129 / 0.14);
+  --color-emerald-100: rgb(16 185 129 / 0.26);
+  --color-emerald-300: rgb(16 185 129 / 0.5);
+  --color-amber-50: rgb(245 158 11 / 0.14);
+  --color-amber-200: rgb(245 158 11 / 0.32);
+  --color-sky-50: rgb(14 165 233 / 0.14);
+  --color-sky-200: rgb(14 165 233 / 0.32);
+
+  & .text-brand-600, & .text-brand-700, & .text-brand-800, & .text-brand-900,
+  & .hover\:text-brand-700:hover, & .hover\:text-brand-800:hover {
+    color: #a3b8e0;
+  }
+  & .file\:text-brand-700::file-selector-button {
+    color: #a3b8e0;
+  }
+  & .text-emerald-600, & .text-emerald-700, & .text-emerald-800, & .hover\:text-emerald-700:hover {
+    color: #34d399;
+  }
+  & .text-amber-500, & .text-amber-600, & .text-amber-700, & .text-amber-800 {
+    color: #fbbf24;
+  }
+  & .text-accent-500, & .text-accent-600, & .text-accent-700, & .hover\:text-accent-600:hover {
+    color: #f47c86;
+  }
+  & .text-sky-700 {
+    color: #7dd3fc;
+  }
+}

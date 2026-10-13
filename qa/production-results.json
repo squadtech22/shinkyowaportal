@@ -1,0 +1,1646 @@
+{
+  "generatedAt": "2026-10-13T15:47:30.060Z",
+  "base": "http://localhost:3002",
+  "mode": "production",
+  "fixtureTag": "qa-1791906438176-746718",
+  "passed": 327,
+  "failed": 0,
+  "results": [
+    {
+      "label": "Login Super Admin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Login Manager",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Login Agent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Login Team Leader",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Login Finance Manager",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Invalid staff password rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Public GET /",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /stock",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /filter",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /filter?category=stock",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /stock-search?query=test",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /make/Toyota",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /type/SUV",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /country/Kenya",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /category/New%20Arrival",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /services/shipping",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /about-us/company-profile",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /about-us/why-choose-us",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /sales-and-bank-details",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /admin/login",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /admin/register",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Public GET /client/login",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Unknown URL returns 404",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Super Admin GET /admin",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/stock",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/stock/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/stock-import",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/customers",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/customers/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/payments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/reserved",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/shipments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/shipments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/documents",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/inquiries",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/website",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/catalog",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/approvals",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/users",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/users/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/roles",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/roles/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/finance",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/finance/ledger",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/finance/japan-payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/finance/japan-payments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/commissions",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/profile",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Super Admin GET /admin/my-commission",
+      "pass": true,
+      "detail": "expected access, HTTP 307 /admin/commissions"
+    },
+    {
+      "label": "Manager GET /admin",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/stock",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/stock/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/stock-import",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/customers",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/customers/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/payments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/reserved",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/shipments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/shipments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/documents",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/inquiries",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/website",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/catalog",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/approvals",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/users",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/users/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/roles",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/roles/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/finance",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/finance/ledger",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/finance/japan-payments",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/finance/japan-payments/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/commissions",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Manager GET /admin/profile",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Manager GET /admin/my-commission",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/stock",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/stock/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/stock-import",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/customers",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/customers/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/payments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/reserved",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/shipments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/shipments/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/documents",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/inquiries",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/website",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/catalog",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/approvals",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/users",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/users/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/roles",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/roles/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/finance",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/finance/ledger",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/finance/japan-payments",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/finance/japan-payments/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/commissions",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Agent GET /admin/profile",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Agent GET /admin/my-commission",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/stock",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/stock/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/stock-import",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/customers",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/customers/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/payments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/reserved",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/shipments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/shipments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/documents",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/inquiries",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/website",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/catalog",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/approvals",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/users",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/users/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/roles",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/roles/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/finance",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/finance/ledger",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/finance/japan-payments",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/finance/japan-payments/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/commissions",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Team Leader GET /admin/profile",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Team Leader GET /admin/my-commission",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/stock",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/stock/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/stock-import",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/customers",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/customers/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/payments/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/reserved",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/shipments",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/shipments/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/documents",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/inquiries",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/website",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/catalog",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/approvals",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/users",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/users/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/roles",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/roles/new",
+      "pass": true,
+      "detail": "expected denied, HTTP 307 /admin/no-access"
+    },
+    {
+      "label": "Finance Manager GET /admin/finance",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/finance/ledger",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/finance/japan-payments",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/finance/japan-payments/new",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/commissions",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/profile",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Finance Manager GET /admin/my-commission",
+      "pass": true,
+      "detail": "expected access, HTTP 200"
+    },
+    {
+      "label": "Signed out /admin",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/stock",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/stock/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/stock-import",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/customers",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/customers/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/payments",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/payments/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/reserved",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/shipments",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/shipments/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/documents",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/inquiries",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/website",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/catalog",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/approvals",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/users",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/users/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/roles",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/roles/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/finance",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/finance/ledger",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/finance/japan-payments",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/finance/japan-payments/new",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/commissions",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/profile",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Signed out /admin/my-commission",
+      "pass": true,
+      "detail": "HTTP 307"
+    },
+    {
+      "label": "Stock create with photo and purchase costs",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Purchase costs persisted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Uploaded stock image served",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Stock view /stock",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Stock view /filter?category=stock",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Stock view /stock?page=1.5",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Stock view /stock-search?search=qa-1791906438176-746718-CHASSIS",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Stock view /vehicle-info/661",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Matching make route includes vehicle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Matching type route includes vehicle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Matching country route includes vehicle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Matching category route includes vehicle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Filter excludes nonmatching vehicle /stock?fueltype=diesel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Filter excludes nonmatching vehicle /filter?yearfrom=2025",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Filter excludes nonmatching vehicle /stock?model=nonexistent-qa-model",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Invalid stock upload type rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot edit stock",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Hide stock from public site",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Hidden vehicle renders not-found without exposing its details",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Relist stock",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Relisted vehicle is public again",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer create with portal login",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent sees own customer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot open other customer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Team Leader sees subordinate customer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Team Leader cannot open outside-team customer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot mutate another customer",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Reserve vehicle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Reservation awards exactly 10 points",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Duplicate reservation rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent records pending payment with TT upload",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent payment requires approval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot approve payment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager approves payment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot change approved amount",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Approved amount preserved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Paid reservation cannot be released accidentally",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Shipment create and vehicle attachment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Fully paid shipped vehicle shows cleared in stock status",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Export document upload",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff own TT",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Staff invoice",
+      "pass": true,
+      "detail": "HTTP 200"
+    },
+    {
+      "label": "Anonymous TT",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "label": "Anonymous invoice",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "label": "Customer portal login",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Portal displays own reserved car, payment and vessel",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer downloads own invoice",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer downloads own TT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer session cannot enter admin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff session cannot enter client portal",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Other customer cannot download invoice",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Other customer cannot download TT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Outside-team staff cannot download TT",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Print customer statement",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Other-customer statement blocked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Contact form stores message",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Newsletter subscribe",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Duplicate newsletter is idempotent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Vehicle inquiry stores valid submission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Duplicate vehicle enquiry suppressed",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Export /admin/finance/ledger.csv",
+      "pass": true,
+      "detail": "200 text/csv; charset=utf-8"
+    },
+    {
+      "label": "Export /admin/inquiries/subscribers.csv",
+      "pass": true,
+      "detail": "200 text/csv; charset=utf-8"
+    },
+    {
+      "label": "Export /admin/stock-import/template.xlsx",
+      "pass": true,
+      "detail": "200 application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+    },
+    {
+      "label": "Anonymous export blocked /admin/finance/ledger.csv",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "label": "Anonymous export blocked /admin/inquiries/subscribers.csv",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "label": "Anonymous export blocked /admin/stock-import/template.xlsx",
+      "pass": true,
+      "detail": "HTTP 403"
+    },
+    {
+      "label": "Add salesperson commission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Commission calculated from vehicle profit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot approve own commission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Commission month approved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Unpaid commission approval can be withdrawn",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Commission can be reapproved",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Finance completes approved commission",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Paid commission status persisted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Paid commission cannot be withdrawn",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "CSV import preview",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Preview leaves database unchanged",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "CSV import commit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Imported specifications persist",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Repeated CSV import updates rather than duplicates",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Imported chassis remains unique",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Invalid calendar date rejected before SQL",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Finance Manager records Japan payment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Japan payment edit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Japan payment delete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Catalog item create",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Catalog item delete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Custom role create",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Custom role permissions edit",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Create staff with custom role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Login Custom shipments role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Custom role without dashboard lands on allowed shipment page",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Custom role can view shipments",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Custom role cannot view stock",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Role in use cannot be deleted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Delete custom-role staff account",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Deleted staff session revoked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Custom role delete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager creates subordinate Agent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager-created staff reports to Manager",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager cannot promote staff to Super Admin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent cannot change website content",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Website content validates email",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager saves website contact settings",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Saved contact email shown publicly",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager closes vehicle enquiry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager deletes vehicle enquiry",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Second customer reservation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Reserved vehicle cannot be deleted",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Second vehicle document upload",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Remove export document",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Removed export document is no longer downloadable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Release reservation after removing all paperwork",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Release subtracts reservation points exactly once",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Repeated release rejected",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Available vehicle delete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Upload paperwork to unreserved vehicle",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Delete unreserved vehicle with paperwork",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Vehicle deletion removes its private document file",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Unused customer delete",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Deleted customer portal session revoked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager can return approved TT to pending",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Agent deletes own pending payment",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Deleted TT file is no longer downloadable",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Shipment delete leaves reservation intact",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Deleting shipment preserves customer reservation",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff registration awaits approval",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Pending staff cannot enter admin",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Manager approves staff signup with Agent role",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Login Agent",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff password change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff password change revokes other session",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff password change preserves current session",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer password change",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer password change revokes other session",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Customer password change preserves current session",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Currency and theme preferences",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Staff logout redirects",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Logged-out session blocked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Client logout redirects",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Logged-out customer blocked",
+      "pass": true,
+      "detail": ""
+    },
+    {
+      "label": "Temporary fixtures cleaned up",
+      "pass": true,
+      "detail": ""
+    }
+  ],
+  "visualBrowserTested": false
+}

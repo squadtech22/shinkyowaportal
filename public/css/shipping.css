@@ -1,0 +1,16 @@
+.w-100 {
+    width: 78%;
+}
+
+.sub-content h2 {
+    margin: 1rem 0;
+}
+
+.sub-content ul {
+    margin: 1rem 2rem;
+    font-weight: bold;
+}
+
+.sub-content ul li {
+    list-style: circle;
+}

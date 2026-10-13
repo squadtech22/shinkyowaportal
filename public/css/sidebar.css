@@ -1,0 +1,209 @@
+.main-sidebar .search {
+    width: 100%;
+}
+
+.main-sidebar h2,
+.second-sidebar h2 {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 5px;
+    color: white;
+    background: var(--primary-color);
+}
+
+.main-sidebar .search form {
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.main-sidebar .search form label {
+    width: 20%;
+    padding-left: 5px;
+    display: inline-flex;
+    font-weight: bold;
+}
+
+.main-sidebar .search form input,
+.main-sidebar .search form select {
+    width: 78%;
+    height: 30px;
+    outline: none;
+    border-radius: 0;
+    border: 1px solid black;
+}
+
+.main-sidebar .search form input {
+    padding-left: 5px;
+}
+
+.main-sidebar .search form button {
+    margin: auto;
+    padding: 8px 20px;
+    border-radius: 0;
+    border: 1px solid var(--secondary-color);
+    background: var(--secondary-color);
+    color: white;
+}
+
+.main-sidebar .search form button:hover {
+    filter: brightness(0.9);
+    cursor: pointer;
+}
+
+.main-sidebar .make li,
+.main-sidebar .type li,
+.main-sidebar .region li {
+    padding: 5px 0;
+    background: white;
+    font-size: 12px;
+}
+
+.main-sidebar .make li:hover,
+.main-sidebar .type li:hover,
+.main-sidebar .region li:hover {
+    filter: brightness(0.9);
+}
+
+.main-sidebar .make li a,
+.main-sidebar .type li a,
+.main-sidebar .region li a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main-sidebar .make li img {
+    width: 30px;
+}
+
+.main-sidebar .type li img,
+.main-sidebar .region li img {
+    width: 31px;
+    height: 20px;
+}
+
+.second-sidebar .vehicle-of-day {
+    height: 240px !important;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.second-sidebar .testimonials {
+    height: 250px;
+    position: relative;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.second-sidebar .testimonials {
+    height: 100%;
+}
+
+.second-sidebar .testimonials .item {
+    margin-bottom: 1rem;
+}
+
+.second-sidebar .vehicle-of-day .stage .item {
+    width: 80%;
+    margin: auto;
+    position: relative;
+}
+
+.second-sidebar .vehicle-of-day p {
+    color: var(--primary-color);
+}
+
+.second-sidebar .vehicle-of-day .stage .item img {
+    width: 100%;
+}
+
+.second-sidebar .vehicle-of-day .stage .item button,
+.second-sidebar .testimonials button {
+    background: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    padding: 1% 3%;
+    outline: none;
+    cursor: pointer;
+    justify-self: flex-end;
+}
+
+.second-sidebar .vehicle-of-day .action {
+    margin: 10px 0;
+    position: absolute;
+    display: flex;
+    gap: 5px;
+    right: 0;
+    bottom: -20px;
+}
+
+.second-sidebar .vehicle-of-day .action button {
+    position: relative;
+    padding: 3px 7px;
+    border: 1px solid var(--primary-color);
+    background: var(--primary-color);
+    color: white;
+    font-size: 18px;
+}
+
+.second-sidebar .testimonials {
+    width: 100%;
+}
+
+.second-sidebar .testimonials .btn {
+    display: grid;
+}
+
+.second-sidebar .testimonials img {
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 5px;
+}
+
+.second-sidebar hr {
+    margin: 10px 0;
+}
+
+.second-sidebar .offers {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.second-sidebar .offers img {
+    width: 100%;
+    cursor: pointer;
+}
+
+#vehicleOfDay.swiper-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+#vehicleOfDay .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+
+}
+
+#vehicleOfDay .swiper-slide img {
+    height: 80%;
+}
+
+#vehicleOfDay .swiper-slide>a {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#vehicleOfDay .swiper-slide {
+    height: 86%;
+}

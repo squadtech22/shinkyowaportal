@@ -1,0 +1,222 @@
+#slider {
+    width: 97%;
+    height: 200px;
+    margin: auto;
+}
+
+#slider img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Desktop Styles (Original) */
+.pageContent .sub-content .tabs {
+    width: 100%;
+    background: var(--primary-color);
+    color: white;
+    gap: 40px;
+    margin-top: 6rem;
+    display: flex;
+}
+
+.pageContent .sub-content .tabs:nth-of-type(1) {
+    margin-top: 0;
+}
+
+.pageContent .sub-content .tabs .option {
+    background: var(--primary-color);
+    padding: 7.5px;
+    cursor: pointer;
+}
+
+.pageContent .sub-content .tabs .option p {
+    margin: 0;
+}
+
+.pageContent .sub-content .tabs .option:hover {
+    filter: brightness(0.6);
+}
+
+.pageContent .sub-content .tabs .mobile-view-all {
+    display: none;
+}
+
+.pageContent .sub-content .budget-vehicle {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px 0;
+    position: relative;
+}
+
+.pageContent .sub-content .budget-vehicle .item {
+    width: calc(100% * (1/5) - 20px);
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    font-size: 15px;
+}
+
+.pageContent .sub-content .budget-vehicle .item>a {
+    display: grid;
+    height: 100%;
+    flex-direction: column;
+    color: inherit;
+    text-decoration: none;
+}
+
+.pageContent .sub-content .budget-vehicle .item img {
+    width: 100%;
+}
+
+.pageContent .sub-content .budget-vehicle .item h4 {
+    font-weight: 500;
+    color: var(--primary-color);
+    margin-top: 5px;
+}
+
+.pageContent .sub-content .budget-vehicle .item h4 .pill {
+    font-size: 10px;
+    color: var(--secondary-color);
+}
+
+.pageContent .sub-content .budget-vehicle .desktop-view-all {
+    display: block;
+}
+
+.pageContent .sub-content .budget-vehicle .desktop-view-all>button {
+    position: absolute;
+    padding: 1% 5%;
+    right: 0;
+    bottom: -50px;
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile App Styles */
+@media (max-width: 1024px) {
+    .pageContent .sub-content .tabs.section-header {
+        background: transparent;
+        color: #222;
+        margin-top: 25px;
+        margin-bottom: 5px;
+        padding: 0 15px;
+        justify-content: space-between;
+        align-items: center;
+        width: auto;
+    }
+
+    .pageContent .sub-content .tabs.section-header:nth-of-type(1) {
+        margin-top: 15px;
+    }
+
+    .pageContent .sub-content .tabs .option {
+        background: transparent;
+        padding: 0;
+    }
+
+    .pageContent .sub-content .tabs .option p {
+        font-size: 18px;
+        font-weight: 700;
+        color: #222;
+    }
+
+    .pageContent .sub-content .tabs .mobile-view-all {
+        display: block;
+        font-size: 14px;
+        color: var(--secondary-color);
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .pageContent .sub-content .budget-vehicle .desktop-view-all {
+        display: none;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 15px;
+        padding: 10px 15px 20px 15px;
+        margin: 0;
+        scroll-snap-type: x mandatory;
+        scrollbar-width: none; /* Firefox */
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel::-webkit-scrollbar {
+        display: none; /* Safari and Chrome */
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item {
+        flex: 0 0 160px; /* Fixed width for mobile cards */
+        width: 160px;
+        scroll-snap-align: start;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        background: #fff;
+        border-radius: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        overflow: hidden;
+        position: relative;
+        border: 1px solid #f0f0f0;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item>a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        text-decoration: none;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item img {
+        width: 100%;
+        height: 110px;
+        object-fit: cover;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item h4 {
+        font-weight: 600;
+        color: #333;
+        margin: 10px 10px 5px 10px;
+        font-size: 13px;
+        line-height: 1.4;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item h4 .pill {
+        font-size: 11px;
+        color: #888;
+        font-weight: 400;
+        display: block;
+        margin-top: 2px;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item p {
+        margin: 0 10px 10px 10px;
+        color: var(--secondary-color);
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    .pageContent .sub-content .budget-vehicle.mobile-carousel .item button.primary {
+        display: block;
+        margin: auto 10px 10px 10px;
+        border: none;
+        outline: none;
+        background: var(--secondary-color);
+        color: white;
+        padding: 8px;
+        border-radius: 6px;
+        font-weight: 600;
+        cursor: pointer;
+        width: calc(100% - 20px);
+    }
+}
