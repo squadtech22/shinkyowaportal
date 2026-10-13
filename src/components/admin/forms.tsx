@@ -39,6 +39,7 @@ export function AdminForm({
   return (
     <form
       ref={formRef}
+      action={run}
       className={className}
       aria-busy={pending}
       onSubmit={(e) => {

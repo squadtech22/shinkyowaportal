@@ -2,6 +2,7 @@ import type { NextConfig } from "next";
 import path from "node:path";
 
 const nextConfig: NextConfig = {
+  allowedDevOrigins: ["1pbqn6o281.preview.c37.airoapp.ai"],
   // Cache Components keeps visited routes mounted (hidden) during navigation.
   // Each page injects its own stylesheet from the original site, so hidden
   // routes would leak their CSS into the visible page. Keep it off.
